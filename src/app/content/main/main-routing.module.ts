@@ -7,11 +7,11 @@ const routes: Routes = [
         path: '',
         component: MainComponent,
         children: [
-            // {
-            //     path: '',
-            //     data: { state: 'list' },
-            //     loadChildren: './content/people-list/people-list.module#PeopleListModule',
-            // },
+            {
+                path: '',
+                data: { state: 'list' },
+                loadChildren: './people-list/people-list.module#PeopleListModule',
+            },
             // {
             //     path: ':id',
             //     loadChildren: './content/details/details.module#DetailsModule',
