@@ -1,0 +1,15 @@
+.filter-wrapper {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+  background-color: lightskyblue;
+}

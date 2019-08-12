@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <app-filter></app-filter>
+    <nz-table #Table [nzData]="people$ | async" [nzShowPagination]="false">
+        <thead>
+            <tr>
+                <th>Characters</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let character of Table.data">
+                <td [routerLink]="['/character', prepId(character.url)]">{{ character.name }}</td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>

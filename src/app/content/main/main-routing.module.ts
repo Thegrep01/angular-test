@@ -10,12 +10,12 @@ const routes: Routes = [
             {
                 path: '',
                 data: { state: 'list' },
-                loadChildren: './people-list/people-list.module#PeopleListModule',
+                loadChildren: './content/people-list/people-list.module#PeopleListModule',
             },
-            // {
-            //     path: ':id',
-            //     loadChildren: './content/details/details.module#DetailsModule',
-            // },
+            {
+                path: 'character/:id',
+                loadChildren: './content/details/details.module#DetailsModule',
+            },
         ],
     },
 ];
